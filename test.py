@@ -18,7 +18,7 @@ from app import hello
 class TestHelloApp(unittest.TestCase):
 
   def test_hello(self):
-    self.assertEqual(hello(), "Hello seun in the  World!\n")
+    self.assertEqual(hello(), "Hello seun in the World!\n")
 
 if __name__ == '__main__':
   unittest.main()
