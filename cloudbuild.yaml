@@ -74,8 +74,8 @@ steps:
     set -x && \
     cd env && \
     git add kubernetes.yaml && \
-    git commit -m "Deploying image gcr.io/${PROJECT_ID}/hello-cloudbuild:${SHORT_SHA}
-    Built from commit ${COMMIT_SHA} of repository hello-cloudbuild-app
+    git commit -m "Deploying image gcr.io/${PROJECT_ID}/python-app:${SHORT_SHA}
+    Built from commit ${COMMIT_SHA} of repository application
     Author: $(git log --format='%an <%ae>' -n 1 HEAD)" && \
     git push origin candidate
 
